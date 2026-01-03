@@ -1,0 +1,435 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+/* SCHOOL INTRO FULL PAGE */
+.school-intro-page {
+  position: relative;
+  background: #ffffff;
+  color: #0f172a;
+  padding-bottom: 60px;
+}
+
+/* HERO */
+.school-intro-hero {
+  position: relative;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("https://raw.githubusercontent.com/HamimRaju/Bana_M_A_Majid_High_School/refs/heads/main/Images/Logo/School%20Image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-color: #0f172a;
+}
+
+.school-intro-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgb(15 23 42 / 48%), rgb(52 60 137 / 65%));
+  backdrop-filter: blur(4px);
+}
+
+.school-intro-hero-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 40px 16px 50px;
+  color: #e5e7eb;
+}
+
+.school-intro-hero-kicker {
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #a5b4fc;
+  margin-bottom: 6px;
+}
+
+.school-intro-hero-title {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.school-intro-hero-sub {
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+/* PAGE CONTENT WRAPPER */
+.school-intro-content {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 26px 16px 0;
+}
+
+/* REUSABLE 3D CARD STYLE */
+.card-3d {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.18),
+    0 6px 18px rgba(15, 23, 42, 0.12),
+    0 0 0 1px rgba(148, 163, 184, 0.2);
+}
+
+/* GLASS CARD */
+.school-intro-glass {
+  margin-top: -40px;
+  padding: 20px 18px 18px;
+  backdrop-filter: blur(10px);
+}
+
+.school-intro-glass h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.school-intro-glass p {
+  font-size: 13px;
+  line-height: 1.75;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.text-strong {
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+/* SECTION HEADING */
+.section-heading {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 26px 0 12px;
+  color: #111827;
+}
+
+/* TIMELINE */
+.school-timeline-section {
+  margin-top: 30px;
+}
+
+.school-timeline {
+  position: relative;
+  padding: 10px 0 10px;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(to bottom, #e5e7eb, #9ca3af);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 26px;
+  width: 100%;
+}
+
+.timeline-item .timeline-dot {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #2563eb;
+  border: 3px solid #e5f0ff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.timeline-item .timeline-card {
+  position: relative;
+  max-width: 480px;
+  padding: 14px 14px 12px;
+}
+
+.timeline-item.left .timeline-card {
+  margin-right: auto;
+  margin-left: 0;
+  padding-left: 16px;
+}
+
+.timeline-item.right .timeline-card {
+  margin-left: auto;
+  margin-right: 0;
+  padding-right: 16px;
+}
+
+.timeline-year {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1d4ed8;
+  margin-bottom: 4px;
+}
+
+.timeline-card p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* MISSION & VISION */
+.mission-vision-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.mission-card,
+.vision-card {
+  padding: 16px 14px 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.mission-card h3,
+.vision-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.mission-card ul,
+.vision-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.mission-card li,
+.vision-card li {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.6;
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.mission-card li::before,
+.vision-card li::before {
+  content: "•";
+  position: absolute;
+  left: 4px;
+  top: 0;
+  color: #0f766e;
+}
+
+.mv-icon {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+/* INFO GRID */
+.info-grid-section {
+  margin-top: 32px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.info-box {
+  padding: 14px 12px 12px;
+  transition: transform 0.22s ease, box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.info-icon {
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.info-box h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.info-box p {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* PRINCIPAL SECTION */
+.principal-section {
+  margin-top: 34px;
+  padding: 18px 0 6px;
+  border-radius: 22px;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+}
+
+.principal-photo-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.principal-photo-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  padding: 5px;
+  background: conic-gradient(
+    from 160deg,
+    #1f2937,
+    #2563eb,
+    #0f766e,
+    #1f2937
+  );
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.6);
+}
+
+.principal-photo-circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+}
+
+.principal-text-wrap {
+  background: radial-gradient(
+    circle at top,
+    #e0f2fe 0,
+    #eff6ff 40%,
+    #ffffff 100%
+  );
+  border-radius: 22px;
+  padding: 16px 14px 10px;
+}
+
+.principal-text h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.principal-text p {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.principal-sign {
+  font-size: 12px;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+/* HOVER EFFECTS */
+.mission-card:hover,
+.vision-card:hover,
+.info-box:hover,
+.school-intro-glass:hover,
+.timeline-item .timeline-card:hover,
+.principal-text-wrap:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 24px 60px rgba(15, 23, 42, 0.22),
+    0 10px 24px rgba(15, 23, 42, 0.16),
+    0 0 0 1px rgba(129, 140, 248, 0.5);
+  border-color: rgba(59, 130, 246, 0.9);
+}
+
+/* REVEAL ANIMATION */
+.reveal-intro {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-intro.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+  .school-intro-hero {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+
+@media (min-width: 768px) {
+  .school-intro-hero {
+    min-height: 320px;
+  }
+
+  .school-intro-hero-title {
+    font-size: 32px;
+  }
+
+  .school-intro-hero-sub {
+    font-size: 15px;
+  }
+
+  .school-intro-glass {
+    padding: 24px 22px 20px;
+  }
+
+  .mission-vision-section {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .principal-section {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    padding: 22px 0 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .school-intro-page {
+    padding-bottom: 80px;
+  }
+
+  .school-intro-content {
+    padding: 36px 24px 0;
+  }
+
+  .school-timeline-section {
+    margin-top: 34px;
+  }
+}
