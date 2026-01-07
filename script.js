@@ -54,10 +54,10 @@ document.querySelectorAll(".mobile-nav-item").forEach((item) => {
 
 const gpaStudents = [
   {
-    name: "রিফাত হাসান",
+    name: "আরিফুল ইসলাম নাফিজ",
     gpa: "5.00",
-    year: "SSC ২০২৪",
-    photo: "Images/GPA5/rifat_2024.jpg",
+    year: "SSC 2018",
+    photo: "https://raw.githubusercontent.com/HamimRaju/Bana_M_A_Majid_High_School/refs/heads/main/Images/Alumni_2010_2025/2018/494745056_1655609101990784_2447699203050512641_n.jpg",
   },
   {
     name: "নওশিন আক্তার",
